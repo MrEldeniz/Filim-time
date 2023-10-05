@@ -1,0 +1,594 @@
+.bg {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+
+header {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0),
+    rgba(1, 1, 1, 1)), url(./img/batman-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 75vh;
+}
+
+.nav ul {
+    height: 40px;
+    display: flex;
+    background-color: rgba(148, 148, 209, 0.396);
+    border-radius: 10px;
+    padding: 5px 5px 5px 5px;
+    margin: 5px;
+
+}
+
+.nav ul li {
+    list-style: none;
+    margin-left: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+   
+}
+
+
+
+.flag {
+    background: #f8f8f800;
+    color: #fff;
+}
+
+.flag [value] {
+    background: #504444b6;
+}
+
+
+
+/* --------watchlist----------- */
+
+
+.menu {
+    display: none;
+    background-color: #5044449b;
+    color: white;
+    position: absolute;
+    width: 40%;
+    height: 30%;
+    right: 20%;
+    padding: 10px;
+    border-radius: 7px;
+    outline: 1px solid #fff;
+    overflow: auto;
+}
+
+.menu img {
+    display: block;
+    width: 60px;
+    height: 70px;
+    margin-bottom: 10px;
+}
+
+
+
+
+.film-name {
+    display: block;
+    position: absolute;
+    float: left;
+    top: 28px;
+    cursor: pointer;
+    right: 60%;
+}
+
+
+.menu-body-img {
+    display: block;
+    position: absolute;
+    top: 35px;
+    cursor: pointer;
+    left: 90%;
+}
+
+
+.menu-body-img2 {
+    display: block;
+    position: absolute;
+    float: left;
+    top: 135px;
+    cursor: pointer;
+    left: 90%;
+}
+
+.film-name2 {
+    display: block;
+    position: absolute;
+    float: left;
+    top: 127px;
+    cursor: pointer;
+    right: 60%;
+}
+
+.film-name3 {
+    display: block;
+    position: absolute;
+    float: left;
+    top: 230px;
+    cursor: pointer;
+    right: 60%;
+}
+
+.menu-body-img3 {
+    display: block;
+    position: absolute;
+    float: left;
+    top: 243px;
+    cursor: pointer;
+    left: 90%;
+}
+
+.menu-body-img4 {
+    display: block;
+    position: absolute;
+    float: left;
+    top: 340px;
+    cursor: pointer;
+    left: 90%;
+}
+
+.film-name4 {
+    display: block;
+    position: absolute;
+    float: left;
+    top: 330px;
+    cursor: pointer;
+    right: 60%;
+}
+
+.watchlist-btn {
+    position: absolute;
+    background: #8e8989a0;
+    border-radius: 10px;
+    height: 35px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    right: 40%;
+    top: 1%;
+}
+
+/* -------------login-------------------- */
+
+
+
+
+input[type=text],
+input[type=password] {
+    width: 70%;
+    padding: 12px 20px;
+    background: #111;
+    border-radius: 15px;
+    color: #fff;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.login-button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 10px 15px;
+    top: 1%;
+    border-radius: 15px;
+    right: 5%;
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+}
+
+.login-button:hover {
+    opacity: .9;
+    color: #000;
+    box-shadow: 0px 0px 7px #fff;
+}
+
+.login-button2 {
+    background-color: #04AA6D;
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+    width: 150px;
+    padding: 10px 15px;
+}
+
+
+.login-button2:hover {
+    box-shadow: 0px 0px 8px #000;
+    color: #000;
+}
+
+
+/*---- cancel button------ */
+.cancelbtn {
+    width: auto;
+    color: #fff;
+    padding: 10px 18px;
+    background-color: #f44336;
+    border-radius: 15px;
+}
+
+.cancelbtn:hover {
+    box-shadow: 0px 0px 10px #000;
+    color: #000;
+}
+
+
+
+
+
+
+.container {
+    padding: 16px;
+    background: #6a525200;
+
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+label {
+    color: #fff;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #404040;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+
+
+/* --------- Zoom Animation -------------- */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* ---------------mobile screen-------------------- */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #menu {
+        display: none;
+    }
+    .section-1{
+        display: none;
+    }
+
+    .container-2 {
+        display: none;
+    }
+    .container-1{
+        display: flex;
+    }
+    .container-1 .card{
+      margin-top: 50px;
+      
+    }
+
+    .card {
+        width: 100%;
+       
+    }
+
+    .openbtn {
+        display: block;
+    }
+
+    .sidepanel {
+        display: block;
+    }
+
+    .sidepanel a {
+        display: block;
+    }
+
+    .blok-button {
+        display: block;
+    }
+
+    .watchlist-btn {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    .blok-button {
+        display: none;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+}
+
+.carousel-control-next {
+    color: #000;
+    font-weight: bold;
+    font-size: 90px;
+}
+
+
+
+/* -------------------------------------------- */
+
+.sidepanel {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    display: block;
+}
+
+.sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidepanel a:hover {
+    color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    display: block;
+    color: rgb(255, 255, 255);
+    background: #00000000;
+    padding: 10px 15px;
+    border: none;
+}
+
+
+
+/* ----------carusel------------------- */
+
+
+.card {
+    width: 200px;
+    float: inline-end;
+    height: 300px;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
+    top: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.card img {
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    outline: 5px solid #000;
+
+
+}
+
+
+
+.card:hover .card-body {
+    opacity: 1;
+}
+
+
+
+.carousel-inner {
+    position: absolute;
+    bottom: 90px;
+}
+
+.card-body {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    background: #1f3d4738;
+    backdrop-filter: blur(5px);
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    opacity: 0;
+    justify-content: center;
+    flex-direction: column;
+    transition: .5s;
+}
+
+
+.card-title {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+
+
+.card-sub-title {
+    text-transform: capitalize;
+    font-size: 14px;
+    color: red;
+    text-shadow: 1px 1px 0px #fff;
+    font-weight: 200px;
+}
+
+
+.card-btn {
+    width: 50px;
+    position: absolute;
+    color: #fff;
+    bottom: 25px;
+    left: 40px;                      
+    text-transform: capitalize;
+
+}
+
+.card-btn2 {
+    width: 50px;
+    position: absolute;
+    color: #fff;
+    bottom: 25px;
+    right: 40px;
+
+}
+
+
+
+/* --------footer--------------- */
+.footer {
+    background-color: #000;
+    color: white;
+    border-top: 1px solid #fff;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section {
+    flex: 1 0 25%;
+    margin-bottom: 20px;
+}
+
+.section h3 {
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+
+
+textarea {
+    width: 90%;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: rgb(126, 17, 17);
+    color: #fff;
+    padding: 5px 10px
+}
+
+
+.FilmTime2023 {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+}
